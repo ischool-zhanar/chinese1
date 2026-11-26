@@ -5,6 +5,24 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>i-School Chinese — қытай тілі онлайн</title>
 <meta name="description" content="i-School Chinese: балаларға арналған қытай тілі онлайн сабақтары. Google Meet, топта 5 адамға дейін. Сынақ сабақ тегін.">
+<!-- Meta Pixel: вставьте ID пикселя в META_PIXEL_ID. Пока строка пустая, пиксель выключен. -->
+<script>
+  var META_PIXEL_ID = '';
+  if (META_PIXEL_ID) {
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+    n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+    document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', META_PIXEL_ID);
+    fbq('track', 'PageView');
+  }
+  // Клик по WhatsApp = заявка (Lead). Работает только при включённом пикселе.
+  document.addEventListener('click', function (e) {
+    var a = e.target.closest && e.target.closest('a[href*="wa.me"]');
+    if (a && window.fbq) fbq('track', 'Lead', { content_name: 'whatsapp_trial' });
+  });
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Ma+Shan+Zheng&family=Noto+Serif+SC:wght@400;700;900&family=Noto+Serif:ital,wght@0,400;0,600;0,700;1,400&display=swap" rel="stylesheet">
@@ -523,7 +541,7 @@
     <div class="seal" aria-hidden="true">中</div>
     <div class="brand">i-School Chinese<small>қытай тілі онлайн</small></div>
     <h1>Қытай тілін онлайн, қызықты әрі түсінікті үйреніңіз</h1>
-    <p class="sub">Google Meet арқылы шағын топта, 5 адамға дейін. Ана тілінде сөйлейтін ұстазбен. Алғашқы сабақ — тегін.</p>
+    <p class="sub">Google Meet арқылы шағын топта, 5 адамға дейін. Қытайда өсіп-жеткен, қытай тілін еркін меңгерген ұстазбен. Алғашқы сабақ — тегін.</p>
     <a class="btn" href="https://wa.me/77088452578?text=Сәлеметсіз%20бе!%20Сынақ%20сабаққа%20жазылғым%20келеді" target="_blank" rel="noopener">WhatsApp-қа жазу · Сынақ сабақ</a>
   </div>
 </header>
@@ -584,8 +602,8 @@
   <div class="teacher-card">
     <div class="seal-big" aria-hidden="true">师</div>
     <h3>Гулина лаоши</h3>
-    <p>Ана тілі қытай тілі болып табылатын ұстаз. Оқытушылық тәжірибесі — 10 жыл.</p>
-    <div class="meta">носитель языка · 10 ЖЫЛ ТӘЖІРИБЕ</div>
+    <p>Қытайда өсіп-жеткен қазақ. Қытай тілін еркін меңгерген — Қытайда журналист мамандығына дайындалған. Кейін Қазақстанға көшіп келді. Оқытушылық тәжірибесі — 10 жыл.</p>
+    <div class="meta">ҚЫТАЙДА ӨСКЕН · 10 ЖЫЛ ТӘЖІРИБЕ</div>
   </div>
 </section>
 
